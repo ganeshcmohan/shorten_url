@@ -23,7 +23,7 @@ def create_tables():
 
 
 shortner_ns.add_resource(ShortnerCreate, "/create")
-shortner_ns.add_resource(Shortner, "/<string:url>")
+shortner_ns.add_resource(Shortner, "/<string:shortkey>")
 
 
 if __name__ == "__main__":

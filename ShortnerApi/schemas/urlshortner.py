@@ -6,8 +6,7 @@ class ShortnerSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
         model = ShortnerModel
         load_instance = True
-        # load_only = ("short",)
-        include_fk = True
-        # exclude = ("encode")
+        # load_only = ("encode_url",)   
+        # exclude = ("short", )
 
     id = ma.auto_field()
